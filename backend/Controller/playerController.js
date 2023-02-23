@@ -369,7 +369,7 @@ const otpLoginGenerator = async (req, res) => {
     const mailOptions = {
       from: process.env.EMAIL,
       to: email,
-      subject: 'Reset Password',
+      subject: 'Otp Login',
       text: `Hello ${user.name} !!! Your OTP to login the account is ${otp}`,
     };
 

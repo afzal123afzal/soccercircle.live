@@ -31,7 +31,7 @@ const Chat = () => {
     socket.current.emit("new-user-add", user._id);
     socket.current.on("get-users", (users) => {
       setOnlineUsers(users);
-      console.log(onlineUsers);
+      // console.log(onlineUsers);  // study chat
     });
   }, [user]);
 
@@ -45,7 +45,7 @@ const Chat = () => {
   // Get the message from socket server
   useEffect(() => {
     socket.current.on("receive-message", (data) => {
-      console.log(data)
+      // console.log(data)  // study chat
       setReceiveMessage(data);
     }
 
@@ -59,7 +59,7 @@ const Chat = () => {
           { headers: { 'Authorization': `Bearer ${user.token}` } }
         )
         setChats(data)
-        console.log(data);
+        // console.log(data);  // study chat
       } catch (err) {
         console.log(err);
       }
