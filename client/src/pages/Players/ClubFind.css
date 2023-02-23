@@ -11,7 +11,16 @@
 
 
 .css-1gqtk00 {
-  margin-left: 228px !important;
+  /* margin-left: 228px !important; */
+  margin-left: 450px !important;
+}
+
+.css-1hyvbmd {
+  margin-top: 0px !important;
+}
+
+.css-1hw9j7s{
+  height: 40px;
 }
 
 .players {
@@ -44,9 +53,34 @@
   background-image: linear-gradient(rgb(5, 177, 188), rgb(165, 212, 231));
 }
 
+
+
+
+@media  (min-width: 375px) {
+  .css-1hyvbmd {
+    margin-top: 5px !important;
+    margin-right: 20px !important;
+  }
+
+  .css-1gqtk00 {
+    margin-left: 228px !important;
+    /* margin: center */
+  }
+}
+
+
 @media (max-width: 560px) {
   .players {
     margin: center;
     justify-content: center;
+  }
+
+  /* .css-1hyvbmd{
+    margin-top: 14px !important;
+    margin-right: 20px !important;
+  } */
+  .css-1gqtk00 {
+    margin-left: 228px !important;
+    /* margin: center; */
   }
 }

@@ -43,7 +43,7 @@ function OtpLoginForm({ email }) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           /> */}
-                    <button disabled={isLoading} className="button-test-one" type="submit">Reset Password</button>
+                    <button disabled={isLoading} className="button-test-one" type="submit">Login</button>
                     {error && <div className="error">{error}</div>}
                 </form>
             )}

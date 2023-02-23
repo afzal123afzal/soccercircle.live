@@ -122,10 +122,10 @@ function ClubProfileStatistics(props) {
                 <h3 className="text-xl font-semibold leading-normal mb-2 text-blueGray-700 mt-2">
                   {club.email}
                 </h3>
-                <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
+               { club.place && <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                   <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
                   {club.place ? club.place : ""}
-                </div>
+                </div>}
                 <div className="mb-2 text-blueGray-600 mt-10">
                   <i className="fas fa-phone mr-2 text-lg text-blueGray-400"></i>
                   {club.mobile}

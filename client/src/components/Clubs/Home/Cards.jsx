@@ -1,6 +1,11 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import img1 from '../../../assets/xaviball.jpeg'
+import img2 from '../../../assets/club-homepage.webp'
+import img3 from '../../../assets/messageHomepage.jpg'
+import img4 from '../../../assets/membershipHomepage.jpeg'
+import img5 from '../../../assets/community.jpeg'
 
 function Cards() {
   return (
@@ -10,13 +15,13 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='/src/assets/xaviball.jpeg'
+              src={img1}
               text='Short of numbers? We’ll show you all the local players who are looking to join a game at the time you play.'
               label='FIND PLAYERS'
               path='#'
             />
             <CardItem
-              src='/src/assets/club-homepage.webp'
+              src={img2}
               text='Looking for a new club to join? Explore the local community and find the perfect club to suit your interests and level of play'
               label='DISCOVER CLUBS'
               path='#'
@@ -24,19 +29,19 @@ function Cards() {
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='/src/assets/messageHomepage.jpg'
+              src={img3}
               text='Unleash Your Sporting Potential and Connect with Clubs & Players through our Chat App.'
               label='BUILD NETWORK'
               path='#'
             />
             <CardItem
-              src='/src/assets/membershipHomepage.jpeg'
+              src={img4}
               text='Unlock Exclusive Benefits and Enhance Your Sports Experience with a Membership to Our Platform.'
               label=' BECOME A MEMBER'
               path='#'
             />
             <CardItem
-              src='/src/assets/community.jpeg'
+              src={img5}
               text='Join a Vibrant Community of Sports Enthusiasts and Unleash Your Passion.'
               label='JOIN A THRIVING COMMUNITY'
               path='#'

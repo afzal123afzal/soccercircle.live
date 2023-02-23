@@ -80,7 +80,7 @@ const signUp = async (req, res) => {
       to: email,
       subject: 'SoccerCircle Email Verification',
       // html: `Please click this link to verify your email: <a href="${modifiedUrl}">The MagicLink !!!!! Click Here</a>`,
-      html: `Please click this link to verify your email: <a href="${verificationLink}">The MagicLink !!!!! Click Here</a>`,
+      html: `Welcome ${club.name} !!! Please click this link to verify your email: <a href="${verificationLink}">The MagicLink !!!!! Click Here</a>`,
     };
 
     await transporter.sendMail(mailOptions);
@@ -359,7 +359,7 @@ const otpLoginGenerator = async (req, res) => {
       from: process.env.EMAIL,
       to: email,
       subject: 'Reset Password',
-      text: `Your OTP to login the account is ${otp}`,
+      text: `Hello ${user.name} !!! Your OTP to login the account is ${otp}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -428,7 +428,7 @@ const forgotPassword = async (req, res) => {
       from: process.env.EMAIL,
       to: email,
       subject: 'Soccer Circle Reset Password',
-      text: `Your OTP to reset password is ${otp}`,
+      text: `Hello ${user.name} !!! Your OTP to reset password is ${otp}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

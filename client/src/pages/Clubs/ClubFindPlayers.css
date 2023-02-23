@@ -14,7 +14,13 @@
 } */
 
 .css-1gqtk00 {
-  margin-left: 228px !important;
+  /* margin-left: 277px !important; */
+  margin-left: 375px !important;
+
+}
+
+.css-1hw9j7s{
+  height: 40px;
 }
 
 .players {
@@ -47,7 +53,7 @@
   background-image: linear-gradient(rgb(5, 177, 188), rgb(165, 212, 231));
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
 
   .css-1gqtk00 {
     margin-left: 144px !important;
