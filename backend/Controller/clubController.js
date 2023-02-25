@@ -387,7 +387,7 @@ const otpLogin = async (req, res) => {
   try {
     const club = await Club.otpLogin(email, otp)
     const name = club.name
-    const payment = club.pclub
+    const payment = club.payment
     const _id = club._id
     const blockStatus = club.blockStatus
 
