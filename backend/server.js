@@ -43,7 +43,7 @@ const server = app.listen(process.env.PORT, () => {
 
 
 //////// routes
-app.use('/admin', adminRouter)
+app.use('/api/admin', adminRouter)
 app.use('/api/player', playerRouter)
 app.use('/api/club', clubRouter)
 

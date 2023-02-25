@@ -9,5 +9,5 @@ export const axiosClubsInstance = axios.create({
 })
 
 export const axiosAdminInstance = axios.create({
-    baseURL: '/admin'
+    baseURL: '/api/admin'
 })
